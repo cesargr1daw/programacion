@@ -1,0 +1,412 @@
+'''
+Created on Nov 17, 2022
+
+@author: estudiante
+'''
+#Ejercicio 1
+from random import randint
+
+numeros=[]
+for i in range(100):
+    numeros.append(randint(0,1000))
+def conocer(comparador):
+    mayor=0
+    suma=0
+    if comparador=="MAYOR":
+        for x in range(len(numeros)):
+            if numeros[x] > mayor:
+                mayor=numeros[x]
+        resultado=mayor
+    elif comparador=="MENOR":
+        menor=conocer("MAYOR")
+        for x in range(len(numeros)):
+            if numeros[x] < menor:
+                menor=numeros[x]
+        resultado=menor
+    elif comparador=="SUMA":
+        for x in (numeros):
+            suma+=x
+        resultado=suma
+    return resultado
+print(conocer("MAYOR"))
+print(conocer("MENOR"))
+print(conocer("SUMA"))
+print(conocer("SUMA")/len(numeros))
+print(numeros)
+valor=int(input("¿Que valor desea sustituir? "))
+sustituto=int(input("¿Que numero desea introducir en la lista? "))
+def sustituir(valor,sustituto,lista):
+    for i in range(len(lista)):
+        if lista[i]==valor:
+            lista[i]=sustituto
+sustituir(valor,sustituto,numeros)
+print(numeros)
+
+#Ejercicio 2
+
+lista = []
+def listaNumero():
+    lista = []
+    contador=0
+    while contador<10:
+        numero=int(input("Introduce un número: "))
+        lista.append(numero)
+        contador+=1
+    return lista
+print(listaNumero())
+
+
+#EJERCICIO 3
+def es_bisiesto(year):
+    return (year%4==0 and (year%100!=0 or year%400==0))
+
+def es_fecha_valida(d, m, y):
+    dias_maximo_mes = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    
+    return (1<= d <= dias_maximo_mes[m-1]
+            or (es_bisiesto(y) and m==2 and 1<=d<=29)
+        )
+
+def transformar_fecha(day, month, year):
+    nombre_meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
+    
+    if es_fecha_valida(day, month, year):
+    
+        mes_largo = nombre_meses[month-1]
+        resultado = f"{day} de {mes_largo} de {year}"
+        
+    else:
+        resultado = "La fecha introducida es incorrecta."
+        
+    return resultado
+
+
+dia     = int(input("Introduzca un día: "))
+mes     = int(input("Introduzca un mes válido: "))
+anyo    = int(input("Introduzca un mes válido: "))
+
+while dia >= 0:
+    print(transformar_fecha(dia, mes, anyo))
+    
+    dia     = int(input("Introduzca un día: "))
+    mes     = int(input("Introduzca un mes válido: "))
+    anyo    = int(input("Introduzca un mes válido: "))
+    
+#Ejercicio 4
+fin="no"
+lista=[]
+while not (fin=="si"):
+    numero=int(input("Introduce un numero:"))
+    lista.append(numero)
+    if numero<0:
+        fin="si"
+   
+def ObtenerElementomayor(lista):
+    mayor=lista[0]
+    for i in lista:
+        if i > mayor:
+            mayor = i
+   
+       
+    return mayor
+
+
+def numeroPares(lista):
+    par=[0]
+    for i in lista:
+        if i%2==0:
+            par.append(i)
+           
+    return par
+print(f"Estos son los numeros pares:{numeroPares(lista)}")
+print(f"El mayor es:{ObtenerElementomayor(lista)}")
+#Ejercicio 5
+def reverse (li) :
+    lista_invert=[]
+    cuenta=len (li)-1
+    while cuenta>=0:
+        lista_invert.append (li [cuenta])
+        cuenta-=1
+    return lista_invert
+
+print (reverse ( ["Di", "buen", "día", "a", "papa"]))
+
+#Ejercicio 6
+def estaOrdenada(lista):
+    estado=True
+    salida=True
+    for i in range(len(lista)-1):
+        if lista[i]>lista[i+1]:
+            estado=False
+
+        if estado==False:
+            if lista[i]<lista[i+1]:
+                salida=False
+    return salida
+print(estaOrdenada((lista)))
+
+assert lista([1,2,3,4,5,])
+
+
+#Ejercicio 7
+N1 = input('di un numero para la ficha 1: ')
+N2 = input('di un numero para la ficha 1: ')
+l1 = (N1,N2)
+N3 = input('di un numero para la ficha 2: ')
+N4 = input('di un numero para la ficha 2: ')
+l2 = (N3,N4)
+
+def encajan(arg1, arg2):
+    resultado = "no encajan"
+    for i in arg1:
+        if i in arg2:
+            resultado = "encajan"
+      
+    return resultado
+
+
+print(encajan(l1,l2))
+
+#EJERCICIO 8
+def comprobarPrimos(lista):
+    primo=[]
+    resto=0
+    contador=0
+    for i in range(len(lista)-1):
+        contador=0
+        for x in range(2,lista[i]):
+            resto=lista[i]%x
+            if resto==0:
+                contador+=1
+        if contador==0:
+            primo.append(lista[i])
+    return primo
+def sumar(lista):
+    suma=0
+    for i in lista:
+        suma+=i
+    return suma
+
+def promedio(lista):
+    suma=0
+    for i in range(len(lista)):
+        suma+=lista[i]
+    promedio=(suma/(len(lista)))
+    return promedio
+
+def factorial(lista):
+    factorial=1
+    factorizado=[]
+    for i in lista:
+        for x in range(i,1,-1):
+            factorial=factorial*x
+
+        factorizado+=[factorial]
+    return factorizado
+
+lista=[]
+numero=0
+while numero >-1:
+    numero=int(input("Ve metiendo numeros: "))
+    lista+=[numero]
+
+
+print(comprobarPrimos(lista))
+print(sumar(lista))
+print(promedio(lista))
+print(factorial(lista))
+
+#EJERCICIO 9
+
+lista=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,24]
+k=12
+
+def menores(lista,n):
+    menores=[]
+    for i in range(len(lista)):
+        if lista[i] < n:
+            menores.append(lista[i])
+    return menores
+def mayores(lista,n):
+    mayores=[]
+    for i in range(len(lista)):
+        if lista[i] > n:
+            mayores.append(lista[i])
+    return mayores
+def multiplos(lista,k):
+    multiplos=[]
+    for i in lista:
+        if i%k==0:
+            multiplos.append(i)
+    return multiplos
+
+
+print(menores(lista,k))
+print(mayores(lista,k))
+print(multiplos(lista,k))
+
+#EJERCICIO 10
+def conversor (lista):
+    if (len(lista)[:-1])=="D":
+        def to_decimal(n):
+            n = list(n)
+            n.reverse()
+            decimal = 0
+            for i in range(len(n)):
+                decimal += int(n[i]) * 2 ** i
+            return decimal[:-1]
+          
+    elif (len(lista)[:-1])=="B":
+        def to_binary(n):
+            binario = []
+            while n > 0:
+                binario.append(str(n % 2))
+                n //= 2
+            binario.reverse()
+      
+            return ''.join(binario[:-1])
+print (lista)
+
+#EJERCICIO 11
+def main():
+    numero = int(input("Dígame cuántas palabras tiene la primera lista: "))
+
+    if numero < 1:
+        print("¡Imposible!")
+    else:
+        primera = []
+        for i in range(numero):
+            palabra = input(f"Dígame la palabra {i + 1}: ")
+            primera += [palabra]
+        print(f"La primera lista es: {primera}")
+    
+        for i in range(len(primera) - 1, -1, -1):
+            if primera[i] in primera[:i]:
+                del primera[i]
+
+    numero2 = int(input("Dígame cuántas palabras tiene la segunda lista: "))
+
+    if numero2 < 1:
+        print("¡Imposible!")
+    else:
+        segunda = []
+        for i in range(numero2):
+            palabra = input(f"Dígame la palabra {i + 1}: ")
+            segunda += [palabra]
+            print(f"La segunda lista es: {segunda}")
+    
+            for i in range(len(segunda) - 1, -1, -1):
+                if segunda[i] in segunda[:i]:
+                    del segunda[i]
+
+        comunes = []
+        for i in primera:
+            if i in segunda:
+                comunes += [i]
+        return comunes
+    print(f"Palabras que aparecen en las dos listas: {comunes}")
+
+print (main())
+
+#Ejercicio 12
+def menu():
+    numero = int(input("Dígame cuántas palabras tiene la primera lista: "))
+
+    if numero < 1:
+        print("¡Imposible!")
+    else:
+        primera = []
+        
+    for i in range(numero):
+        palabra = input(f"Dígame la palabra {i + 1}: ")
+        primera += [palabra]
+    print(f"La primera lista es: {primera}")
+
+    for i in range(len(primera) - 1, -1, -1):
+        if primera[i] in primera[:i]:
+            del primera[i]
+
+    numero2 = int(input("Dígame cuántas palabras tiene la segunda lista: "))
+
+    if numero2 < 1:
+        print("¡Imposible!")
+    else:
+        segunda = []
+        for i in range (numero2):
+            palabra = input(f"Dígame la palabra {i + 1}: ")
+            segunda += [palabra]
+        print(f"La segunda lista es: {segunda}")
+
+        for i in range(len(segunda) - 1, -1, -1):
+            if segunda[i] in segunda[:i]:
+                del segunda[i]
+
+        soloPrimera = []
+        for i in primera:
+            if i not in segunda:
+                soloPrimera += [i]
+        print(f"Palabras que sólo aparecen en la primera lista: {soloPrimera}")
+
+        soloSegunda = []
+        for i in segunda:
+            if i not in primera:
+                soloSegunda += [i]
+        print(f"Palabras que sólo aparecen en la segunda lista: {soloSegunda}")
+
+        todas = soloPrimera + soloSegunda
+        print(f"Todas las palabras: {todas}")
+
+print (menu())
+
+#EJERCICIO 13
+nombres=["Juan","Pepe","Alberto","Jose","Antonio","Manuel","Almudena","Lucia","Esther","Mireya"]
+def devolverNombres(lista,letra):
+    try:
+        listaDef=[]
+        restricciones="1234567890!·$%&/()=?¿Çç*+^`¨´´';,.-_}{][|@#\ºª¬ "
+        if letra in restricciones:
+            listaDef="Debe ser una letra"
+        else:
+            for i in lista:
+                if i[0].upper()==letra.upper():
+                    listaDef.append(i)
+        for i in lista:
+            for x in range(len(i)):
+                if i[x] in restricciones:
+                    listaDef="Los nombres no pueden contener numeros"
+    except:
+        listaDef="Los nombres solo pueden tener caracteres alfabeticos de la A-Z"
+    return listaDef
+
+print(devolverNombres(nombres,"M"))
+
+#EJERCICIO 14
+
+lista = [ "Ho000000111111", "fasfsdhhasfsdf", "aaa"]
+palabra = "Hoooooooooooll"
+def calcular_letras_distintas(palabra):
+    letras_distintas = ""
+    for letra in palabra:
+        if letra not in letras_distintas:
+            letras_distintas+=letra
+    return len(letras_distintas)
+
+
+def obtenerCadenaMayor(cdn1, cdn2):
+    mayor_cadena = ""
+    if len(cdn1)>len(cdn2):
+        mayor_cadena = cdn1
+        
+    elif len(cdn1) < len(cdn2):
+        mayor_cadena = cdn2
+    else:
+        distintas_1 = calcular_letras_distintas(cdn1)
+        distintas_2 = calcular_letras_distintas(cdn2)
+
+
+
+
+
+
+
+

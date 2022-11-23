@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bandeja_entrada>
+    <correo1>
+        <remitente><nombre>César</nombre> <email>csrgrcrms@gmail.com</email> </remitente>
+        <destinatario><nombre>Pepe</nombre> <email>pepe123@gmail.com</email></destinatario>
+        <asunto>Fallos del PC</asunto>
+        <cuerpo>
+            <parrafo1>Los errores de hardware están a la orden del día, por lo que es normal que os ocurra alguno de los que mencionamos.
+            Añadimos posibles soluciones para hacer lo más útil posible esta recopilación de errores.</parrafo1>
+            <parrafo2>En nuestra andadura de PC es inevitable encontrarse con varios errores de hardware y software que van a poner a prueba nuestros conocimientos.</parrafo2>
+        </cuerpo>
+    </correo1>
+    <correo1>
+        <remitente><nombre>Pepe</nombre> <email>pepe123@gmail.com</email></remitente>
+        <destinatario><nombre>César</nombre> <email>csrgrcrms@gmail.com</email> </destinatario>
+        <asunto>Fallos del PC</asunto>
+        <cuerpo>Está perfecto</cuerpo>
+    </correo1>
+</bandeja_entrada>
+
+<!-- César García Ramos-->

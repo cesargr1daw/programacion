@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agenda>
+    <contactos>
+        <contacto>
+            <nombre>Pepe</nombre>
+            <emails>pepe123@gmail.com</emails>
+            <teléfonos>692263296</teléfonos>
+        </contacto>
+        <contacto>
+            <nombre>Paco</nombre>
+            <emails>paco987@gmail.com</emails>
+            <teléfonos>965784512</teléfonos>
+        </contacto>
+    </contactos>
+</agenda>
+<!-- César García Ramos-->

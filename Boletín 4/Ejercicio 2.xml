@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bandeja_entrada>
+    <correo>
+        <remitente>csrgrcrms@gmail.com</remitente>
+        <destinatario>pepe123@gmail.com</destinatario>
+        <asunto>Trabajo Clase</asunto>
+        <cuerpo>Buenas Pepe, ya está listo el trabajo para que añadas tu parte</cuerpo>
+    </correo>
+    <correo2>
+        <remitente>csrgrcrms@gmail.com</remitente>
+        <destinatario>paco987@gmail.com</destinatario>
+        <asunto>Pedido Vendido</asunto>
+        <cuerpo>Buenas noches Paco, me acaba de llegar el dinero. Enseguida te mando el producto</cuerpo>
+    </correo2>
+</bandeja_entrada>
+
+<!-- César García Ramos-->

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding= "UTF-8"?>
+<escritores>
+    <escritor1>
+        <nombre>Mario Vargas Llosa</nombre>
+        <nacimiento>28 de marzo de 1936</nacimiento>
+    </escritor1>
+    <escritor2>
+        <nombre>Milan Kundera</nombre>
+        <nacimiento>15 de febrero de 1949</nacimiento>
+    </escritor2>
+</escritores>
+
+<!-- Añadimos la cabecera con el formato del texto, diferenciamos el grupo 1 de escritor del 2 y borramos la etiqueta nacimiento que nos quedaba suelta 
+    y le damos el mismo formato que al anterior-->

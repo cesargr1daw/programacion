@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pedido> 
+    <destinatario>Juan Delgado Martínez</destinatario>
+    <articulo>bicicleta A2023</articulo>
+    <direccion_pedido>
+        <calle>Barco</calle>
+        <numero>4</numero>
+        <piso>3</piso>
+        <letra>A</letra>
+    </direccion_pedido>
+    <fecha_entrega> 
+        <dia>19</dia>
+        <mes>5</mes>
+        <año>2000</año>
+    </fecha_entrega>
+</pedido>
+
+
+
+<!-- César García Ramos-->

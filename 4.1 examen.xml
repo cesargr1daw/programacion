@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding= "UTF-8"?>
+<transportes>
+    <terrestres>
+        <vehículo>bicileta</vehículo>
+        <vehiculos>coche</vehiculos>
+        <vehiculo>tractor</vehiculo>
+    </terrestres>
+    <acuaticos>
+    <vehiculo>canoa</vehiculo>
+    </acuaticos>
+    <aereos>
+        <vehiculo>avioneta</vehiculo>
+        <vehiculos>helicóptero</vehiculos>
+    </aereos>
+</transportes>
+
+<!-- Creamos la etiqueta transporte para incluir todo dentro y añadimos la etiqueta de comienzo "aereo"-->

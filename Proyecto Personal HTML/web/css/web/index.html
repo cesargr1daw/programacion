@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Modern Boutique</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/skeleton.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				
+				<div class="four columns">
+					<h1>Modern Boutique</h1>
+				</div>
+				<div class="two columns u-pull-right">
+					<ul>
+						<li class="submenu">
+							<img src="img/cart.png">
+							<div id="carrito">
+								<p class="vacio">carrito vacio</p>
+								<table id="lista-carrito" class="u-full-width">
+									<thead>
+										<tr>
+											<th>Imagen</th>
+											<th>Productos</th>
+											<th>Precio</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<img src="img/vaqueros si.jpg" width="100">
+											</td>
+											<td>Pantalón vaquero</td>
+											<td>€15</td>
+											<td><a href="#" class="borrar-product">X</a></td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/pantalon chandal.jpg" width="100">
+											</td>
+											<td>Pantalón de chándal</td>
+											<td>€12</td>
+											<td><a href="#" class="borrar-product">X</a></td>
+										</tr>
+										<td>
+												<img src="img/AnyConv.com__camiseta manga corta.png" width="100">
+											</td>
+											<td>Camista Manga Corta</td>
+											<td>€7</td>
+											<td><a href="#" class="borrar-product">X</a></td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/AnyConv.com__pantalon vaquero.png" width="100">
+											</td>
+											<td>Pantalón Vaquero Roto</td>
+											<td>€15</td>
+											<td><a href="#" class="borrar-product">X</a></td>
+										</tr>
+											<td>
+												<img src="img/AnyConv.com__sudadera n.png" width="100">
+											</td>
+											<td>Sudadera Negra</td>
+											<td>€10</td>
+											<td><a href="#" class="borrar-product">X</a></td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/deportivas adidas.jpg" width="100">
+											</td>
+											<td>Deportiva Addidas</td>
+											<td>€20</td>
+											<td><a href="#" class="borrar-product">X</a></td>
+										</tr>
+											<td>
+												<img src="img/deportiva nike.jpg" width="100">
+											</td>
+											<td>Deportivas Nike</td>
+											<td>€22</td>
+											<td><a href="#" class="borrar-product">X</a></td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/sujetador n.jpg" width="100">
+											</td>
+											<td>Sujetador</td>
+											<td>€5</td>
+											<td><a href="#" class="borrar-product">X</a></td>
+										</tr>
+											<td>
+												<img src="img/chaqueta si.jpg" width="100">
+											</td>
+											<td>Chaqueta</td>
+											<td>€17</td>
+											<td><a href="#" class="borrar-product">X</a></td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/AnyConv.com__sudadera california.png" width="100">
+											</td>
+											<td>Sudadera Azul</td>
+											<td>€10</td>
+											<td><a href="#" class="borrar-product">X</a></td>
+										</tr>
+											<td>
+												<img src="img/AnyConv.com__botas.png" width="100">
+											</td>
+											<td>Botas de cuero</td>
+											<td>€20</td>
+											<td><a href="#" class="borrar-product">X</a></td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/AnyConv.com__pantalon corto.png" width="100">
+											</td>
+											<td>Pantalón Corto</td>
+											<td>€6</td>
+											<td><a href="#" class="borrar-product">X</a></td>
+										</tr>
+									</tbody>
+								</table>
+								<a href="#" id="vaciar-carrito" class="button u-full-width">vaciar carrito</a>
+							</div>	
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="hero">
+		<div class="container">
+			<div class="row">
+				<div class="six columns">
+					<div class="contenido-hero">
+						<h2>Haz un pedido</h2>
+						<p>Todos los pedidos con descuento</p>
+						<form action="lista-products" method="get">
+							<label for="lista-products">¿Qué quieres buscar?</label>
+							<input type="search" id="lista-products" name="q"/>
+							<input type="submit" value="Buscar"/>
+						  </form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="barra">
+		<div class="container">
+			<div class="row">
+				<div class="four columns icono icono1">
+					<p>La ropa es 100% sostenible<br>
+					Combina con todo tipo de ropa</p>
+				</div>
+				<div class="four columns icono icono2">
+					<p>Moda<br>
+					<p> Toda la ropa totalmente personalizable</p>
+				</div>
+				<div class="four columns icono icono3">
+					<p>Envio<br>
+					Gratis hasta tu casa</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="lista-catalogo" class="container">
+		<h1 class="encabezado">Pedidos en linea</h1>
+		<div class="row">
+			<div class="four columns">
+				<div class="card">
+					<img src="img/vaqueros si.jpg" class="u-full-width">
+					<div class="info-card">
+						<h4>Pantalón Vaquero</h4>
+						<p>Envio Gratis</p>
+						<img src="img/estrellas.png">
+						<p class="precio">€20<span class="u-pull-right">€15</span></p>
+						<a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar al carrito</a>
+					</div>
+				</div>
+			</div>
+			<div class="four columns">
+				<div class="card">
+					<img src="img/pantalon chandal.jpg" class="u-full-width">
+					<div class="info-card">
+						<h4>Pantalón Chándal</h4>
+						<p>Envio Gratis</p>
+						<img src="img/estrellas.png">
+						<p class="precio">€15<span class="u-pull-right">€12</span></p>
+						<a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar al carrito</a>
+					</div>
+				</div>
+			</div>
+			<div class="four columns">
+				<div class="card">
+					<img src="img/AnyConv.com__camiseta manga corta.png" class="u-full-width">
+					<div class="info-card">
+						<h4>Camiseta Manga Corta</h4>
+						<p>Envio Gratis</p>
+						<img src="img/estrellas.png">
+						<p class="precio">€12<span class="u-pull-right">€7</span></p>
+						<a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar al carrito</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="four columns">
+				<div class="card">
+					<img src="img/AnyConv.com__pantalon vaquero.png" class="u-full-width">
+					<div class="info-card">
+						<h4>Pantalón Vaquero Roto</h4>
+						<p>Envio Gratis</p>
+						<img src="img/estrellas.png">
+						<p class="precio">€20<span class="u-pull-right">€15</span></p>
+						<a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar al carrito</a>
+					</div>
+				</div>
+			</div>
+			<div class="four columns">
+				<div class="card">
+					<img src="img/AnyConv.com__sudadera n.png" class="u-full-width">
+					<div class="info-card">
+						<h4>Sudadera Negra</h4>
+						<p>Envio Gratis</p>
+						<img src="img/estrellas.png">
+						<p class="precio">€15<span class="u-pull-right">€10</span></p>
+						<a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar al carrito</a>
+					</div>
+				</div>
+			</div>
+			<div class="four columns">
+				<div class="card">
+					<img src="img/deportivas adidas.jpg" class="u-full-width">
+					<div class="info-card">
+						<h4>Deportiva Addidas</h4>
+						<p>Envio Gratis</p>
+						<img src="img/estrellas.png">
+						<p class="precio">€30<span class="u-pull-right">€20</span></p>
+						<a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar al carrito</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="four columns">
+				<div class="card">
+					<img src="img/deportiva nike.jpg" class="u-full-width">
+					<div class="info-card">
+						<h4>Deportivas Nike</h4>
+						<p>Envio Gratis</p>
+						<img src="img/estrellas.png">
+						<p class="precio">€35<span class="u-pull-right">€22</span></p>
+						<a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7">Agregar al carrito</a>
+					</div>
+				</div>
+			</div>
+			<div class="four columns">
+				<div class="card">
+					<img src="img/sujetador n.jpg" class="u-full-width">
+					<div class="info-card">
+						<h4>Sujetador</h4>
+						<p>Envio Gratis</p>
+						<img src="img/estrellas.png">
+						<p class="precio">€10<span class="u-pull-right">€5</span></p>
+						<a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">Agregar al carrito</a>
+					</div>
+				</div>
+			</div>
+			<div class="four columns">
+				<div class="card">
+					<img src="img/chaqueta si.jpg" class="u-full-width">
+					<div class="info-card">
+						<h4>Chaqueta</h4>
+						<p>Envio Gratis</p>
+						<img src="img/estrellas.png">
+						<p class="precio">€21<span class="u-pull-right">€17</span></p>
+						<a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9">Agregar al carrito</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="four columns">
+				<div class="card">
+					<img src="img/AnyConv.com__sudadera california.png" class="u-full-width">
+					<div class="info-card">
+						<h4>Sudadera Azul</h4>
+						<p>Envio Gratis</p>
+						<img src="img/estrellas.png">
+						<p class="precio">€15<span class="u-pull-right">€10</span></p>
+						<a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="10">Agregar al carrito</a>
+					</div>
+				</div>
+			</div>
+			<div class="four columns">
+				<div class="card">
+					<img src="img/AnyConv.com__botas.png" class="u-full-width">
+					<div class="info-card">
+						<h4>Botas de Cuero</h4>
+						<p>Envio Gratis</p>
+						<img src="img/estrellas.png">
+						<p class="precio">€38<span class="u-pull-right">€20</span></p>
+						<a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="11">Agregar al carrito</a>
+					</div>
+				</div>
+			</div>
+			<div class="four columns">
+				<div class="card">
+					<img src="img/AnyConv.com__pantalon corto.png" class="u-full-width">
+					<div class="info-card">
+						<h4>Pantalón Corto</h4>
+						<p>Envio Gratis</p>
+						<img src="img/estrellas.png">
+						<p class="precio">€10<span class="u-pull-right">€6</span></p>
+						<a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="12">Agregar al carrito</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="four columns">
+					<nav class="menu">
+						<a class="enlace" href="#">Pedidos a domicilio</a>
+						<a class="enlace" href="#">Pedidos en linea</a>
+						<a class="enlace" href="#">Pedidos por telefono</a>
+						<a class="enlace" href="#">Pedidos Menu</a>
+						<a class="enlace" href="#">Redes Sociales</a>
+					</nav>
+				</div>
+				<div class="four columns">
+					<nav class="menu">
+						<a class="enlace" href="#">Fabrica</a>
+						<a class="enlace" href="#">Plaza del Ayuntamiento - Nº14 - Gandia - Valencia, España</a>
+						<a class="enlace" href="#">Telefono - 9658436712</a>
+						<a class="enlace" href="#">Telefono - 679456472</a>
+						<a class="enlace" href="#">Redes Sociales - cladb@gmail.com</a>
+						<a class="enlace" href="#">Redes Sociales - @obutique_modern_</a>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="js/app.js"></script>
+
+</body>
+</html>

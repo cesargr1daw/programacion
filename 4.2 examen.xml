@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding= "UTF-8"?>
+<mediosDeTransporte>
+    <vehiculo>
+        <bicicleta velocidad="100km/h"/>
+        <patinete velocidad_maxima="50 km/h"/>
+        <coche velocidad="120km/h"/>
+        <camión velocidad_maxima="50km/h"/>
+    </vehiculo>
+</mediosDeTransporte>
+
+<!-- Agrupamos todo dentro del grupo vehiculo y velocidad y velocidad_maxima se quedan como atributos de etiqueta-->

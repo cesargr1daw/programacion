@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<bingo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation="EjercicioPrueba.xsd">
-    <bola numero= "1"/>
-    <bola numero="8"/>
-    <bola numero="35"/>
-    <bola numero="72"/>
-</bingo>
